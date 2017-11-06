@@ -32,5 +32,16 @@ aside {
 
 footer {
   background-color :#ff9000;
-  grid-aread: footer;
+  grid-area: footer;
+}
+
+@media (max-width: 600px) {
+  container{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+  }
 }
